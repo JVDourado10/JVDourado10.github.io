@@ -1,0 +1,127 @@
+#experiencia {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.experiencia-projeto {
+  background: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  border-radius: 4px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  gap: 10px 48px;
+
+}
+
+.projeto-habilidades {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-content: start;
+}
+
+/* Tipografia */
+#experiencia h3 {
+  word-wrap: break-word;
+  font-size: 100px;
+  text-transform: uppercase;
+  max-width: 4ch;
+  line-height: 1.1;
+  color: var(--cor-3);
+}
+
+.experiencia-conteudo > p {
+  font-size: 24px;
+  max-width: 40ch;
+  Margin-bottom: 60px;
+  color: var(--cor-10);
+}
+
+.experiencia-conteudo p span {
+  font-weight: bold;
+}
+
+.experiencia-projeto h4 {
+  font-size: 18px;
+  position: relative;
+  font-weight: bold;
+}
+
+.experiencia-projeto h4:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 4px;
+  left: -24px;
+  background: var(--cor-g1);
+  border-radius: 4px 0 0 4px;
+  transition: 0.3s;
+}
+.experiencia-projeto h4:nth-child(1):hover::before {
+  width: 8px;
+  left: -28px;
+}
+
+.experiencia-projeto h4 span {
+  display: block;
+  position: absolute;
+  left: -80px;
+  color: var(--cor-10);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.experiencia-projeto h4 a:hover {
+  text-decoration: underline;
+}
+
+.experiencia-projeto p {
+  color: var(--cor-10);
+  font-size: 14px;
+}
+
+.projeto-habilidades p {
+  background: #fff;
+  align-self: start;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+@media(max-width: 800px) {
+   #experiencia{
+    grid-template-columns: 1fr;
+   }
+
+   #experiencia h3 {
+    word-wrap: normal;
+    font-size: 64px;
+    text-transform: capitalize;
+    color: var(--cor-6);
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+}
+@media(max-width: 600px) {
+  .experiencia-conteudo > p {
+    font-size: 20px;
+  }
+  .projeto-habilidades {
+    gap: 6px;
+  }
+  .experiencia-projeto {
+    grid-template-columns: 5fr 2fr;
+  }
+}
+
+@media(max-width: 400px) {
+  .projeto-habilidades {
+    gap: 12px;
+  }
+  #experiencia h3 {
+    font-size: 48px;
+  }
+}

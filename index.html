@@ -10,109 +10,77 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title> Dev João Victor Dourado</title>
+  <!-- alteracoes feitas -->
 </head>
 
 <body>
   <header>
-    <div class="navegacao">
-      <h2>João Victor Dourado</h2>
+    <div class="navegacao container">
+      <h2 class="cor-0">João Victor Dourado</h2>
       <ul class="menu">
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a class="cor-3" href="#experiencia">Experiência</a></li>
+        <li><a class="cor-3" href="#formacao">Formação</a></li>
+        <li><a class="cor-3" href="#contato">Contato</a></li>
       </ul>
     </div>
   </header>
   <main>
-    <div class="perfil">
+    <div class="container perfil">
       <div class="perfil-foto">
         <img src="/img/perfil2.jpg" alt="Foto de Perfil de João Victor">
       </div>
-      <h1>Desenvolvedor Front End</h1>
-      <p>Curitiba| PR</p>
-    </div>
-    <div id="experiencia" class="experiencia">
-      <h3>EXPERIÊNCIA</h3>
-      <p id="descricao">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>.</p>
-      <div class="feitos">
-        <h4 id="titulo">Bikcraft</h4>
-        <h4 class="funcao">Desenvolvedor Júnior</h4>
-        <p>Desenvolvo pequenos projetos como o Bikcraft utilizando apenas HTML, CSS e JavaScript. Para aplicativos web como a rede social Dogs.</p>
-        <div class="requisitos">
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>JavaScript</p>
-          <p>UI Design</p>
-        </div>
-      </div>
-      <div class="feitos">
-        <h4 id="titulo">Bikcraft</h4>
-        <h4 class="funcao">Desenvolvedor Júnior</h4>
-        <p>Desenvolvo pequenos projetos como o Bikcraft utilizando apenas HTML, CSS e JavaScript. Para aplicativos web como a rede social Dogs.</p>
-        <div class="requisitos">
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>JavaScript</p>
-        </div>
-      </div>
-      <div class="feitos">
-        <h4 id="titulo">Bikcraft</h4>
-        <h4 class="funcao">Desenvolvedor Júnior</h4>
-        <p>Desenvolvo pequenos projetos como o Bikcraft utilizando apenas HTML, CSS e JavaScript. Para aplicativos web como a rede social Dogs.</p>
-        <div class="requisitos">
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>JavaScript</p>
-        </div>
+      <div class="perfil-conteudo">
+        <h1 class="cor-13">Desenvolvedor Front End</h1>
+        <p class="cor-10">Curitiba| PR</p>
       </div>
     </div>
-    </div>
-  </main>
-  <section class="fomacaofundo">
-    <div id="formacao" class="formacao">
-      <h3>FORMAÇÃO</h3>
-      <p>Atualmente cursando 8° Período de <span>Engenharia Elétrica</span> 🎓 . Além disso me mantenho sempre atualizado com cursos intensivos online voltados para o desenvolvimento <span>front end</span>.</p>
-      <div class="formacoes">
-        <div class="f">
-          <p id="pequeno">BACHAREL</p>
-          <h4 id="titulo2">Engenharia Elétrica</h4>
-          <p>UTFPR</p>
-        </div>
-        <div class="f">
-          <p id="pequeno">BACHAREL</p>
-          <h4 id="titulo2">Engenharia Elétrica</h4>
-          <p>UTFPR</p>
-        </div>
-        <div class="f">
-          <p id="pequeno"">BACHAREL</p>
-          <h4 id=" titulo2">Engenharia Elétrica</h4>
-          <p>UTFPR</p>
+    <section class="container" id="experiencia">
+      <h3>Experiência</h3>
+      <div class="experiencia-conteudo">
+        <p>Desenvolvo projetos como o Bikcraft utilizando apenas <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>. Além disso, utilizo conhecimentos em <span>UX</span> e <span>UI Design</span> para criar os protótipos dos sites no Figma.</p>
+        <div class="experiencia-projeto">
+          <h4><span>2023</span><a href="./">Bikcraft</a></h4>
+          <h4>Voluntário</h4>
+          <p>Meu primeiro site. Projeto de uma empresa de Bicicletas Elétricas fictícia, feito juntamente ao curso de HTML e CSS da Origamid.</p>
+          <div class="projeto-habilidades">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
         </div>
       </div>
-      <div class="cursos intensivos">
-        <p id="titulo-curso">CURSOS INTENSIVOS</p>
-        <p>HTML e CSS</p>
-        <p id="horas"><span>23h</span></p>
-        <p>UI Design</p>
-        <p id="horas"><span>17h</span></p>
-        <p>Python</p>
-        <p id="horas"><span>20h</span></p>
+    </section>
+    <section class="formacao-bg" id="formacao">
+      <div class="container formacao">
+        <h3 class="cor-14">Formação</h3>
+        <div class="formacao-conteudo">
+          <p class="cor-6">Atualmente cursando <span class="cor-0">Engenharia Elétrica 🎓</span> (8º Período). Além disso, estudo e pratico diariamente conhecimentos de <span class="cor-0">FrontEnd</span>.</p>
+          <div class="formacao-superior">
+            <h5 class="cor-6">BACHAREL</h5>
+            <h4 class="cor-0">Engenharia Elétrica</h4>
+            <h5 class="cor-6">UTFPR</h5>
+          </div>
+          <div class="formacao-cursos">
+            <h5 class="titulo-cursos cor-7">Cursos Intensivos</h5>
+            <p class="cor-0">HTML & CSS <span class="cor-7">48h</span></p>
+            <p class="cor-0">UI Design <span class="cor-7">17h</span></p>
+            <p class="cor-0">Python <span class="cor-7">20h</span></p>
+          </div>
+          <div class="formacao-idiomas">
+            <h5 class="titulo-idiomas cor-7">Idiomas</h5>
+            <p class="cor-0">Inglês <span class="cor-7"> / Intermediário</span></p>
+          </div>
+        </div>
       </div>
-      <div class="cursos idioma">
-        <p id="titulo-curso">IDIOMAS</p>
-        <p>Inglês <span>/ Intermediário</span></p>
-        <p>Alemão <span>/ Básico</span></p>
+    </section>
+    <footer id="contato" class="fundo">
+      <div class="container rodape">
+        <p class="cor-4" id="texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋.</p>
+        <h2 class="cor-0">jovneiva@gmail.com</h2>
+        <h2 class="cor-0">+55 74 99806-1735</h2>
+        <p class="cor-7">João Victor Dourado. Alguns direitos reservados ©.</p>
       </div>
-    </div>
-  </section>
-  <footer id="contato" class="fundo">
-    <div class="rodape">
-      <p id="texto-rodape">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋</p>
-      <h2>jovneiva@gmail.com</h2>
-      <h2>+55 74 99806-1735</h2>
-      <p id="direitos">João Victor Dourado. Alguns direitos reservados</p>
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>

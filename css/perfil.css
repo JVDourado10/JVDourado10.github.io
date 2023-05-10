@@ -1,0 +1,96 @@
+.perfil {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-top: 30px;
+}
+
+.perfil-foto {
+  display: grid;
+  place-items: center;
+}
+
+.perfil-foto {
+  padding-left: 20px;
+}
+
+.perfil-conteudo {
+  display: grid;
+  place-content: center;
+}
+
+.perfil-conteudo h1 {
+  font-size: 64px;
+  line-height: 1.11;
+  max-width: 10ch;
+  position: relative;
+}
+
+.perfil-conteudo h1::before {
+  content: url(../img/detalhe.svg);
+  position: absolute;
+  left: -50px;
+  top: -35px;
+  z-index: -1;
+}
+
+.perfil-conteudo p {
+  padding-top: 12px;
+}
+
+@media(max-width: 1000px) {
+  .perfil-conteudo h1 {
+    font-size: 60px;
+  }
+  .perfil-conteudo h1::before {
+    top: -35px;
+    left: -40px;
+  }
+}
+
+@media(max-width: 800px) {
+  .perfil-conteudo h1 {
+    font-size: 52px;
+  }
+  .perfil-conteudo h1::before {
+    content: '';
+    height: 20px;
+    width: 20px;
+    background: var(--cor-g1);
+    top: 0px;
+    left: -6px;
+  }
+  .perfil-conteudo p {
+    padding-top: 6px;
+  }
+}
+
+@media(max-width: 700px) {
+  .perfil {
+    grid-template-columns: 1fr;
+    padding-top: 0;
+  }
+  .perfil-foto {
+    display: none;
+  }
+  .perfil-conteudo {
+    place-self: start;
+    padding-left: 60px;
+    
+  }
+  .perfil-conteudo h1 {
+    font-size: 48px;
+    max-width: 12ch;
+  }
+  .perfil-conteudo p {
+    padding-top: 0px;
+  }
+}
+
+@media(max-width: 500px) {
+  .perfil-conteudo h1 {
+    font-size: 40px;
+  }
+  .perfil-conteudo {
+    padding-left: 40px;
+  }
+}

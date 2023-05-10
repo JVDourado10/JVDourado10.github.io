@@ -1,0 +1,172 @@
+.formacao-bg {
+  background: var(--cor-13);
+}
+
+.formacao {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.formacao-superior {
+  background: var(--cor-14);
+  max-width: 160px;
+  padding: 20px;
+  border-radius: 4px;
+  margin-top: 60px;
+}
+
+/* Tipografia */
+.formacao p {
+  font-size: 24px;
+}
+
+.formacao p span {
+  font-weight: bold;
+}
+
+.formacao-superior h4 {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  position: relative;
+  line-height: 1.39;
+  max-width: 12ch;
+}
+
+#formacao h3 {
+  word-wrap: break-word;
+  font-size: 100px;
+  text-transform: uppercase;
+  max-width: 5ch;
+  line-height: 1.1;
+}
+
+.formacao-superior h4::before {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 4px;
+  left: -24px;
+  background: var(--cor-g1);
+  border-radius: 4px 0 0 4px;
+  transition: 0.3s;
+}
+
+.titulo-cursos, .titulo-idiomas {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font: 700 14px/1.43 'Fira Sans';
+  position: relative;
+}
+
+.formacao-cursos p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formacao-cursos p:nth-child(-n + 3) {
+  margin-bottom: 20px;
+}
+
+.formacao-cursos p, .formacao-idiomas p {
+  font: 400 18px/1.11 'Fira Sans'
+}
+
+.titulo-cursos::before, .titulo-idiomas::before {
+  content: '';
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  left: -36px;
+  top: -3px;
+}
+
+.titulo-cursos::before {
+  background: url(../img/cursos.svg);
+}
+
+.titulo-idiomas::before {
+  background: url(../img/idiomas.svg);
+}
+
+@media(max-width: 600px) {
+  .formacao-conteudo > p {
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 800px) {
+  #formacao h3 {
+    word-wrap: normal;
+    font-size: 64px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    position: relative;
+    color: var(--cor-14);
+  }
+
+  .formacao {
+    grid-template-columns: 1fr;
+  }
+
+  .formacao p {
+    max-width: 512px;
+  }
+
+  .formacao-conteudo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .formacao-conteudo > p {
+    grid-column: 1/4;
+  }
+
+  .titulo-cursos::before, .titulo-idiomas::before {
+    left: 0px;
+    top: -32px;
+  }
+
+  .formacao-cursos, .formacao-idiomas {
+    position: relative;
+  }
+
+  .formacao-cursos::before, .formacao-idiomas::before {
+    content: '';
+    position: absolute;
+    height: 160px;
+    width: 1px;
+    background: var(--cor-12);
+    left: -20px;
+    top: 60px;
+  }
+}
+
+@media(max-width: 600px) {
+  .formacao-conteudo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  
+  .formacao-superior {
+    grid-column: 1/3;
+  }
+
+  .formacao-conteudo > p {
+    grid-column: 1/3;
+  }
+
+  .formacao-cursos::before {
+    display: none;
+  }
+}
+
+@media(max-width: 400px) {
+  #formacao h3 {
+    font-size: 48px;
+  }
+}
