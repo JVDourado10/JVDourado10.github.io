@@ -16,6 +16,11 @@
 
 }
 
+.projetos {
+  display: grid;
+  gap: 20px;
+}
+
 .projeto-habilidades {
   display: flex;
   gap: 10px;
