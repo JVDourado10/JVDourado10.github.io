@@ -11,7 +11,7 @@
 
 .formacao-superior {
   background: var(--cor-14);
-  max-width: 160px;
+  width: 140px;
   padding: 20px;
   border-radius: 4px;
   margin-top: 60px;
@@ -31,7 +31,7 @@
   margin-bottom: 50px;
   position: relative;
   line-height: 1.39;
-  max-width: 12ch;
+  max-width: 14ch;
 }
 
 #formacao h3 {
@@ -89,6 +89,11 @@
 
 .titulo-idiomas::before {
   background: url(../img/idiomas.svg);
+}
+
+.formacoes {
+  display: flex;
+  gap: 20px;
 }
 
 @media(max-width: 600px) {
