@@ -13,7 +13,7 @@
   display: grid;
   grid-template-columns: 4fr 3fr;
   gap: 10px 48px;
-
+  position: relative;
 }
 
 .projetos {
@@ -41,7 +41,7 @@
 .experiencia-conteudo > p {
   font-size: 24px;
   max-width: 40ch;
-  Margin-bottom: 60px;
+  margin-bottom: 60px;
   color: var(--cor-10);
 }
 
@@ -56,7 +56,7 @@
 }
 
 .experiencia-projeto h4:nth-child(1)::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 20px;
   width: 4px;
@@ -73,7 +73,7 @@
 .experiencia-projeto h4 span {
   display: block;
   position: absolute;
-  left: -80px;
+  left: -90px;
   color: var(--cor-10);
   font-size: 14px;
   font-weight: 500;
@@ -95,12 +95,37 @@
   padding: 5px 10px;
 }
 
-@media(max-width: 800px) {
-   #experiencia{
-    grid-template-columns: 1fr;
-   }
+.experiencia-projeto p,
+.projeto-habilidades {
+  display: none;
+}
 
-   #experiencia h3 {
+.experiencia-projeto .mais {
+  opacity: 0.2;
+  position: absolute;
+  bottom: 0;
+  justify-self: center;
+  cursor: pointer;
+  border: none;
+  background-color: var(--cor-1);
+}
+
+.experiencia-projeto:hover .mais {
+  opacity: 1;
+}
+
+.experiencia-projeto p.aparente,
+.projeto-habilidades.aparente,
+.projeto-habilidades.aparente p {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  #experiencia {
+    grid-template-columns: 1fr;
+  }
+
+  #experiencia h3 {
     word-wrap: normal;
     font-size: 64px;
     text-transform: capitalize;
@@ -108,9 +133,8 @@
     margin-bottom: 30px;
     position: relative;
   }
-
 }
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   .experiencia-conteudo > p {
     font-size: 20px;
   }
@@ -122,7 +146,7 @@
   }
 }
 
-@media(max-width: 400px) {
+@media (max-width: 400px) {
   .projeto-habilidades {
     gap: 12px;
   }
